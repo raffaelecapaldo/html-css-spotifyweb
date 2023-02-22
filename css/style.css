@@ -211,7 +211,8 @@ main {
 }
 
 .controlalbumimg {
-    width: 15%;
+    width: 60px;
+    min-width: 60px;
     padding-right:10px;
 }
 
@@ -340,8 +341,20 @@ main {
     width: 450px;
     height: 10px;
     border-radius:15px;
-    background-color: red;
+    background-color:var(--grey);
     margin:15px 10px 0px 10px;
+    position:relative;
+}
+
+.overbar {
+    position:absolute;
+    width: 115px;
+    height: 10px;
+    border-radius:15px;
+    background-color: var(--white);
+    top:0;
+    left:0;
+    z-index:3;
 }
 
 /* SIZE MD */
