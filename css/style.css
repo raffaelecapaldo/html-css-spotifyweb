@@ -87,6 +87,29 @@ main {
     overflow-y: auto;
 }
 
+.songlist {
+    margin-top:20px;
+    color:white;
+    padding:0px 20px;
+    width: 100%;
+}
+
+.album {
+    width: calc(100% / 6);
+    padding-right:20px;
+    text-align: center;
+}
+
+.albumimage img {
+    width: 100%;
+}
+
+.subtitle {
+    font-size:0.8rem;
+    color:var(--grey);
+    font-weight: bold;
+}
+
 /* UTILITIES  */
 
 .d-flex {
@@ -110,13 +133,26 @@ main {
     flex-wrap: wrap;
 }
 
+.nowrap {
+    flex-wrap: nowrap;
+}
+
 .gap10 {
     gap:10px;
+}
+
+.pb15 {
+    padding-bottom:15px;
+}
+
+.pb7 {
+    padding-bottom:7px;
 }
 
 .u-text {
     text-transform: uppercase;
 }
+
 
 .mr10 {
     margin-right: 10px;
@@ -124,7 +160,8 @@ main {
 }
 
 .greenline {
-    border-bottom: 1px solid var(--highlight);
+    border-bottom: 2px solid var(--highlight);
+    padding-bottom:3px;
 }
 
 /* COMPONENTS */
