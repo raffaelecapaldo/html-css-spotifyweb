@@ -82,29 +82,37 @@ main {
 
 .logo img {
     width: 80%;
-    padding:20px 0 20px 20px;
+    padding: 20px 0 20px 20px;
 }
 
 .navelement ul li {
-    padding-left:20px;
-    padding-top:5px;
-    padding-bottom:5px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-size: 0.8rem;
     font-weight: 600;
-    color:var(--grey)
+    color: var(--grey)
 }
 
 .navelement img {
     width: 30px;
     vertical-align: middle;
-    padding-right:5px;
+    padding-right: 5px;
 }
 
 #homeselection {
-    border-left:3px solid var(--highlight);
-    padding-left:17px;
+    border-left: 3px solid var(--highlight);
+    padding-left: 17px;
 }
 
+#playlist li {
+    padding-bottom: 10px;
+}
+
+.navelement h5 {
+    padding-left: 20px;
+    font-size: 0.9rem;
+}
 
 .app-content {
     width: calc(100% - 200px);
@@ -131,7 +139,7 @@ main {
 }
 
 .infoalbum h3 {
-    font-size:1rem;
+    font-size: 1rem;
 }
 
 .albumimage img {
@@ -197,6 +205,17 @@ main {
 
 }
 
+.mt15 {
+    margin-top: 15px;
+}
+
+.fa-square-plus {
+    font-size: 30px;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+
 
 .greenline {
     border-bottom: 2px solid var(--highlight);
@@ -215,6 +234,7 @@ main {
     font-size: 0.7rem;
     font-weight: bold;
 }
+
 /* SIZE MD */
 @media screen and (max-width:768px) {
     .album {
@@ -222,7 +242,7 @@ main {
     }
 
     .subtitle {
-        padding-bottom:10px;
+        padding-bottom: 10px;
     }
 }
 
