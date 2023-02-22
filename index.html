@@ -19,29 +19,40 @@
 <body>
     <div class="wrapper">
         <main class="d-flex">
-            <nav class="app-nav">
-                <div class="logo">
-                    <img src="img/logo.svg" alt="Spotify Logo">
+            <nav class="app-nav d-flex ">
+                <div class="topbar">
+                    <div class="logo">
+                        <img src="img/logo.svg" alt="Spotify Logo">
+                    </div>
+                    <div class="dirnav navelement">
+                        <ul>
+                            <li id="homeselection"><img src="img/home.svg" alt="home button">Home</li>
+                            <li><img src="img/search.svg" alt="search button">Cerca</li>
+                            <li><img src="img/libreria.svg" alt="library">La tua libreria</li>
+                        </ul>
+                    </div>
+                    <div class="dirnav mt15 navelement">
+                        <h5 class="u-text">Playlist</h5>
+                        <ul id="playlist">
+                            <li><i class="fa-sharp fa-regular fa-square-plus"></i>Crea Playlist</li>
+                            <li>Nome playlist</li>
+                            <li>Canzoni Sanremo 2023</li>
+                            <li>Zecchino D'Oro</li>
+                            <li>Canzoni anime 2023</li>
+                            <li>Nome playlist</li>
+                            <li>Nome playlist</li>
+                            <li>Nome playlist</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="dirnav navelement">
-                    <ul>
-                        <li id="homeselection"><img src="img/home.svg" alt="home button">Home</li>
-                        <li><img src="img/search.svg" alt="search button">Cerca</li>
-                        <li><img src="img/libreria.svg" alt="library">La tua libreria</li>
-                    </ul>
-                </div>
-                <div class="dirnav mt15 navelement">
-                    <h5 class="u-text">Playlist</h5>
-                    <ul id="playlist">
-                        <li><i class="fa-sharp fa-regular fa-square-plus"></i>Crea Playlist</li>
-                        <li>Nome playlist</li>
-                        <li>Canzoni Sanremo 2023</li>
-                        <li>Zecchino D'Oro</li>
-                        <li>Canzoni anime 2023</li>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                    </ul>
+                <div class="bottombar">
+                    <div class="profile">
+                        <a class="grey xstext bold" href="#"><img src="img/download.svg">Installa app</a>
+                        <div class="profileinfo">
+                            <img id="iconprofile" src="img/profile.svg">
+                            <span>John Doe</span>
+                        </div>
+                    </div>
                 </div>
             </nav>
             <div class="app-content">

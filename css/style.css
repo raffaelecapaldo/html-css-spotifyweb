@@ -4,7 +4,9 @@
     margin: 0;
     padding: 0;
 }
-
+a {
+    text-decoration: none;
+}
 ul li {
     list-style: none;
 }
@@ -76,8 +78,10 @@ main {
 
 .app-nav {
     width: 200px;
-    min-height: 480px;
+    height: calc(100vh - 90px);
     background-color: var(--black);
+    flex-flow: column nowrap;
+    justify-content: space-between;
 }
 
 .logo img {
@@ -156,6 +160,49 @@ main {
     border-radius: 50%;
 }
 
+.profile {
+    padding-left:20px;
+    padding-bottom:2px;
+    flex-flow: column;
+    justify-content: flex-end;
+}
+
+.profile img {
+    width:13%;
+    vertical-align: middle;
+    padding-right:5px;
+    
+}
+
+.profile a {
+    display:block;
+    border-bottom:1px solid grey;
+    width: 90%;
+    padding-bottom:10px;
+}
+
+.profile p {
+    padding-top:10px;
+}
+
+#iconprofile {
+    background-color: var(--grey);
+    border-radius:50%;
+    width: 25px;
+    height: 25px;
+    margin-right:3px;
+}
+
+.profileinfo {
+    margin-top:10px;
+    margin-bottom:3px;
+}
+
+.profileinfo span {
+    font-size:0.8rem;
+    font-weight: bold;
+    
+}
 /* UTILITIES  */
 
 .d-flex {
@@ -215,6 +262,17 @@ main {
     padding-right: 5px;
 }
 
+.grey {
+    color:var(--grey)
+}
+
+.xstext {
+    font-size:0.8rem;
+}
+
+.bold {
+    font-weight: bold;
+}
 
 
 .greenline {
