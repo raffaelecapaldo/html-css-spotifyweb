@@ -209,7 +209,42 @@ main {
     height: 100%;
     padding:0px 10px;
 }
+
+.controlalbumimg {
+    width: 15%;
+    padding-right:10px;
+}
+
+.controlalbumimg img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.controlico {
+    padding-left:30px;
+}
+
+.controlico i {
+    padding-right:5px;
+    color:var(--grey);
+}
+
+.controls i {
+    padding:0px 10px;
+}
+
+.centerbar {
+    flex-flow:column nowrap;
+}
+
+.lenghtbar {
+    align-items: baseline;
+}
 /* UTILITIES  */
+.controls .fa-circle-play {
+    font-size:2.5rem;
+    padding:0 20px;
+}
 
 .d-flex {
     display: flex;
@@ -297,6 +332,16 @@ main {
     color: var(--white);
     font-size: 0.7rem;
     font-weight: bold;
+}
+
+
+
+.underbar {
+    width: 450px;
+    height: 10px;
+    border-radius:15px;
+    background-color: red;
+    margin:15px 10px 0px 10px;
 }
 
 /* SIZE MD */
