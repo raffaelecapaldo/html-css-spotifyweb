@@ -59,7 +59,7 @@ main {
     position: fixed;
     top: 0;
     right: 0;
-    width: calc(100% - 230px);
+    width: calc(100% - 185px);
     height: 80px;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -75,13 +75,13 @@ main {
 
 
 .app-nav {
-    width: 230px;
+    width: 185px;
     min-height: 480px;
     background-color: var(--black);
 }
 
 .app-content {
-    width: calc(100% - 230px);
+    width: calc(100% - 185px);
     height: 100%;
     background-color: var(--dark-color);
     overflow-y: auto;
@@ -94,10 +94,18 @@ main {
     width: 100%;
 }
 
+.row {
+    flex-wrap: wrap;
+}
+
 .album {
     width: calc(100% / 6);
     padding-right: 20px;
     text-align: center;
+}
+
+.infoalbum h3 {
+    font-size:1rem;
 }
 
 .albumimage img {
@@ -180,4 +188,14 @@ main {
     color: var(--white);
     font-size: 0.7rem;
     font-weight: bold;
+}
+
+@media screen and (max-width:768px) {
+    .album {
+        width: calc(100% / 4);
+    }
+
+    .subtitle {
+        padding-bottom:10px;
+    }
 }
