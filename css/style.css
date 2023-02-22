@@ -51,6 +51,15 @@ main {
     background-color: var(--dark-grey);
 }
 
+#app-header {
+    position:fixed;
+    top:0;
+    right:0;
+    width: calc(100% - 230px);
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 
 
 .app-nav {
@@ -70,4 +79,13 @@ main {
 
 .d-flex {
     display: flex;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.align-center {
+    align-items: center;
+    align-content: center;
 }
