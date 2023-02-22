@@ -35,3 +35,18 @@ body {
     color:var(--white);
     overflow:hidden;
 }
+
+main {
+    width: 100%;
+    height: calc(100% - 90px);
+    background-color: var(--dark-color);
+    overflow: hidden;
+}
+
+/* CONTROLBAR */
+
+#controlbar {
+    width: 100%;
+    height: 90px;
+    background-color: var(--dark-grey);
+}
