@@ -59,7 +59,7 @@ main {
     position: fixed;
     top: 0;
     right: 0;
-    width: calc(100% - 185px);
+    width: calc(100% - 200px);
     height: 80px;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -75,13 +75,39 @@ main {
 
 
 .app-nav {
-    width: 185px;
+    width: 200px;
     min-height: 480px;
     background-color: var(--black);
 }
 
+.logo img {
+    width: 80%;
+    padding:20px 0 20px 20px;
+}
+
+.navelement ul li {
+    padding-left:20px;
+    padding-top:5px;
+    padding-bottom:5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color:var(--grey)
+}
+
+.navelement img {
+    width: 30px;
+    vertical-align: middle;
+    padding-right:5px;
+}
+
+#homeselection {
+    border-left:3px solid var(--highlight);
+    padding-left:17px;
+}
+
+
 .app-content {
-    width: calc(100% - 185px);
+    width: calc(100% - 200px);
     height: 100%;
     background-color: var(--dark-color);
     overflow-y: auto;
