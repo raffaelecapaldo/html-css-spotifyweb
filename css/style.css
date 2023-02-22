@@ -14,3 +14,14 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+:root {
+    /* Color styles */
+    --dark-color:#141922;
+    --dark-grey:#282828;
+    --black:black;
+    --white:white;
+    --grey:#717171;
+    --light-grey:#C1C1C1;
+    --highlight:#ADFF2F;
+}
