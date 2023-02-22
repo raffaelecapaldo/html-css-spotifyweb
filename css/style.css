@@ -1,8 +1,8 @@
 /* RESET */
 * {
     box-sizing: border-box;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 /* SCROLLING */
@@ -17,23 +17,23 @@ body {
 
 :root {
     /* Color styles */
-    --dark-color:#141922;
-    --dark-grey:#282828;
-    --black:black;
-    --white:white;
-    --grey:#717171;
-    --light-grey:#C1C1C1;
-    --highlight:#ADFF2F;
+    --dark-color: #141922;
+    --dark-grey: #282828;
+    --black: black;
+    --white: white;
+    --grey: #717171;
+    --light-grey: #C1C1C1;
+    --highlight: #ADFF2F;
 }
 
 /* WEBAPP WRAPPER */
 
 .wrapper {
-    width:100%;
-    height:100vh;
+    width: 100%;
+    height: 100vh;
     background-color: var(--black);
-    color:var(--white);
-    overflow:hidden;
+    color: var(--white);
+    overflow: hidden;
 }
 
 main {
@@ -43,10 +43,31 @@ main {
     overflow: hidden;
 }
 
-/* CONTROLBAR */
+
 
 #controlbar {
     width: 100%;
     height: 90px;
     background-color: var(--dark-grey);
+}
+
+
+
+.app-nav {
+    width: 230px;
+    min-height: 480px;
+    background-color: var(--black);
+}
+
+.app-content {
+    width: calc(100% - 230px);
+    height: 100%;
+    background-color: var(--dark-color);
+    overflow-y: auto;
+}
+
+/* UTILITIES  */
+
+.d-flex {
+    display: flex;
 }
