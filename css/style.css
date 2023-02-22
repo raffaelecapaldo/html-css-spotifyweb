@@ -56,17 +56,17 @@ main {
 }
 
 #app-header {
-    position:fixed;
-    top:0;
-    right:0;
+    position: fixed;
+    top: 0;
+    right: 0;
     width: calc(100% - 230px);
     height: 80px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 #category-nav {
-    color:var(--grey);
-    margin-top:100px;
+    color: var(--grey);
+    margin-top: 100px;
     font-weight: 700;
     font-size: 0.8rem;
 
@@ -88,15 +88,15 @@ main {
 }
 
 .songlist {
-    margin-top:20px;
-    color:white;
-    padding:0px 20px;
+    margin-top: 20px;
+    color: white;
+    padding: 0px 20px;
     width: 100%;
 }
 
 .album {
     width: calc(100% / 6);
-    padding-right:20px;
+    padding-right: 20px;
     text-align: center;
 }
 
@@ -105,9 +105,13 @@ main {
 }
 
 .subtitle {
-    font-size:0.8rem;
-    color:var(--grey);
+    font-size: 0.8rem;
+    color: var(--grey);
     font-weight: bold;
+}
+
+#mostpopular img {
+    border-radius: 50%;
 }
 
 /* UTILITIES  */
@@ -138,15 +142,15 @@ main {
 }
 
 .gap10 {
-    gap:10px;
+    gap: 10px;
 }
 
 .pb15 {
-    padding-bottom:15px;
+    padding-bottom: 15px;
 }
 
 .pb7 {
-    padding-bottom:7px;
+    padding-bottom: 7px;
 }
 
 .u-text {
@@ -159,20 +163,21 @@ main {
 
 }
 
+
 .greenline {
     border-bottom: 2px solid var(--highlight);
-    padding-bottom:3px;
+    padding-bottom: 3px;
 }
 
 /* COMPONENTS */
 
 .btn-upgrade {
-    padding:10px 20px;
-    display:inline-block;
-    border:1px solid var(--white);
-    border-radius:20px;
+    padding: 10px 20px;
+    display: inline-block;
+    border: 1px solid var(--white);
+    border-radius: 20px;
     text-decoration: none;
-    color:var(--white);
-    font-size:0.7rem;
+    color: var(--white);
+    font-size: 0.7rem;
     font-weight: bold;
 }
