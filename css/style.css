@@ -4,9 +4,11 @@
     margin: 0;
     padding: 0;
 }
+
 a {
     text-decoration: none;
 }
+
 ul li {
     list-style: none;
 }
@@ -161,59 +163,59 @@ main {
 }
 
 .profile {
-    padding-left:20px;
-    padding-bottom:2px;
+    padding-left: 20px;
+    padding-bottom: 2px;
     flex-flow: column;
     justify-content: flex-end;
 }
 
 .profile img {
-    width:13%;
+    width: 13%;
     vertical-align: middle;
-    padding-right:5px;
-    
+    padding-right: 5px;
+
 }
 
 .profile a {
-    display:block;
-    border-bottom:1px solid grey;
+    display: block;
+    border-bottom: 1px solid grey;
     width: 90%;
-    padding-bottom:10px;
+    padding-bottom: 10px;
 }
 
 .profile p {
-    padding-top:10px;
+    padding-top: 10px;
 }
 
 #iconprofile {
     background-color: var(--grey);
-    border-radius:50%;
+    border-radius: 50%;
     width: 25px;
     height: 25px;
-    margin-right:3px;
+    margin-right: 3px;
 }
 
 .profileinfo {
-    margin-top:10px;
-    margin-bottom:3px;
+    margin-top: 10px;
+    margin-bottom: 3px;
 }
 
 .profileinfo span {
-    font-size:0.8rem;
+    font-size: 0.8rem;
     font-weight: bold;
-    
+
 }
 
 .wrapbar {
     justify-content: space-between;
     height: 100%;
-    padding:0px 10px;
+    padding: 0px 10px;
 }
 
 .controlalbumimg {
     width: 60px;
     min-width: 60px;
-    padding-right:10px;
+    padding-right: 10px;
 }
 
 .controlalbumimg img {
@@ -222,29 +224,46 @@ main {
 }
 
 .controlico {
-    padding-left:30px;
+    padding-left: 30px;
 }
 
 .controlico i {
-    padding-right:5px;
-    color:var(--grey);
+    padding-right: 5px;
+    color: var(--grey);
 }
 
-.controls i {
-    padding:0px 10px;
+.controls i,
+.rightbar i {
+    padding: 0px 10px;
+}
+
+.controls {
+    margin-bottom: 10px;
 }
 
 .centerbar {
-    flex-flow:column nowrap;
+    flex-flow: column nowrap;
 }
 
-.lenghtbar {
-    align-items: baseline;
+.rightbar {
+    flex-flow: row;
 }
+
+.rightbar .underbar {
+    width: 150px;
+    height: 5px;
+}
+
+.rightbar .overbar {
+    width: 30px;
+    height: 5px;
+}
+
+
 /* UTILITIES  */
 .controls .fa-circle-play {
-    font-size:2.5rem;
-    padding:0 20px;
+    font-size: 2.5rem;
+    padding: 0 20px;
 }
 
 .d-flex {
@@ -305,11 +324,11 @@ main {
 }
 
 .grey {
-    color:var(--grey)
+    color: var(--grey)
 }
 
 .xstext {
-    font-size:0.8rem;
+    font-size: 0.8rem;
 }
 
 .bold {
@@ -339,22 +358,28 @@ main {
 
 .underbar {
     width: 450px;
-    height: 10px;
-    border-radius:15px;
-    background-color:var(--grey);
-    margin:15px 10px 0px 10px;
-    position:relative;
+    height: 5px;
+    border-radius: 15px;
+    background-color: var(--grey);
+    margin: 0 15px;
+    position: relative;
 }
 
+.lenghtbar h5 {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+
 .overbar {
-    position:absolute;
+    position: absolute;
     width: 115px;
-    height: 10px;
-    border-radius:15px;
+    height: 5px;
+    border-radius: 15px;
     background-color: var(--white);
-    top:0;
-    left:0;
-    z-index:3;
+    top: 0;
+    left: 0;
+    z-index: 3;
 }
 
 /* SIZE MD */
