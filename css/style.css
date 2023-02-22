@@ -189,7 +189,7 @@ main {
     font-size: 0.7rem;
     font-weight: bold;
 }
-
+/* SIZE MD */
 @media screen and (max-width:768px) {
     .album {
         width: calc(100% / 4);
@@ -197,5 +197,12 @@ main {
 
     .subtitle {
         padding-bottom:10px;
+    }
+}
+
+/* SIZE S */
+@media screen and (max-width:576px) {
+    .album {
+        width: calc(100% / 2);
     }
 }
