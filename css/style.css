@@ -89,3 +89,25 @@ main {
     align-items: center;
     align-content: center;
 }
+
+.u-text {
+    text-transform: uppercase;
+}
+
+.mr10 {
+    margin-right: 10px;
+
+}
+
+/* COMPONENTS */
+
+.btn-upgrade {
+    padding:10px 20px;
+    display:inline-block;
+    border:1px solid var(--white);
+    border-radius:20px;
+    text-decoration: none;
+    color:var(--white);
+    font-size:0.7rem;
+    font-weight: bold;
+}
