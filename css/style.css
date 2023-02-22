@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+ul li {
+    list-style: none;
+}
+
 /* SCROLLING */
 html {
     scroll-behavior: smooth;
@@ -60,6 +64,14 @@ main {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+#category-nav {
+    color:var(--grey);
+    margin-top:100px;
+    font-weight: 700;
+    font-size: 0.8rem;
+
+}
+
 
 
 .app-nav {
@@ -81,6 +93,10 @@ main {
     display: flex;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
 .justify-end {
     justify-content: flex-end;
 }
@@ -90,6 +106,14 @@ main {
     align-content: center;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
+.gap10 {
+    gap:10px;
+}
+
 .u-text {
     text-transform: uppercase;
 }
@@ -97,6 +121,10 @@ main {
 .mr10 {
     margin-right: 10px;
 
+}
+
+.greenline {
+    border-bottom: 1px solid var(--highlight);
 }
 
 /* COMPONENTS */
