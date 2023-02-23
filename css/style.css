@@ -110,7 +110,7 @@ main {
     opacity:0.7;
 }
 
-#homeselection {
+#homeselection, .dirnav.navelement ul li:hover {
     border-left: 3px solid var(--highlight);
     padding-left: 17px;
 }
