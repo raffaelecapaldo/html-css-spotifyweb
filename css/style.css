@@ -65,7 +65,7 @@ main {
 }
 
 #app-header .controlstop {
-    display:none;
+    display: none;
 }
 
 #app-header {
@@ -75,7 +75,7 @@ main {
     width: calc(100% - 200px);
     height: 80px;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index:1000;
+    z-index: 1000;
     justify-content: flex-end;
 }
 
@@ -227,8 +227,8 @@ main {
 }
 
 #playb:hover {
-    transform:scale(1.2);
-    
+    transform: scale(1.2);
+
 }
 
 .wrapbar {
@@ -460,7 +460,6 @@ i:hover {
 
 .underbar:hover .circlebar {
     opacity: 1;
-
 }
 
 .lenghtbar:hover .overbar {
@@ -502,7 +501,6 @@ li:hover a,
 #category-nav ul li:hover span {
     border-color: var(--highlight);
 }
-
 
 .albumselection .albumimage::after {
     font-family: 'Font Awesome 6 Free';
@@ -552,8 +550,9 @@ li:hover a,
         width: calc(100% / 4);
     }
 
-    .leftbar i, .rightbar i {
-        display:none;
+    .leftbar i,
+    .rightbar i {
+        display: none;
     }
 
     .leftbar {
@@ -576,123 +575,125 @@ li:hover a,
     }
 
     #app-header .underbar {
-        margin:0;
+        margin: 0;
     }
 
     #app-header .controlstop {
-        display:flex;
+        display: flex;
     }
 
     #app-header .controlstop:hover .overbar {
         background-color: var(--highlight);
         cursor: pointer;
+    }
+
+    #app-header .controlstop:hover .circlebar {
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width:756px) {
     .leftbar {
-        display:none;
+        display: none;
     }
 
     .rightbar {
-        display:none;
+        display: none;
     }
 
     .centerbar {
         width: 100%;
     }
 
-@media screen and (max-width:576px) {
-    .album {
-        width: calc(100% / 2);
-    }
+    @media screen and (max-width:576px) {
+        .album {
+            width: calc(100% / 2);
+        }
 
-    .app-nav {
-        width: 45px;
-    }
+        .app-nav {
+            width: 45px;
+        }
 
-    #app-header,
-    .app-content {
-        width: calc(100% - 45px);
-        
-    }
+        #app-header,
+        .app-content {
+            width: calc(100% - 45px);
 
-    #playlistsection,
-    .app-nav span,
-    .logo {
+        }
+
+        #playlistsection,
+        .app-nav span,
+        .logo {
+            display: none;
+        }
+
+        #homeselection,
+        .navelement ul li {
+            padding: 0;
+            margin: 0;
+            border-left: 0;
+            padding-bottom: 10px;
+        }
+
+        .dirnav.navelement {
+            display: flex;
+            justify-content: center;
+        }
+
+        .profile,
+        .profileinfo {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        .profile a img {
+            width: 83%;
+        }
+
+        #iconprofile {
+            width: 23px;
+            height: 23px;
+            margin-left: 7px;
+            margin-bottom: 3px;
+        }
+
+        .profile a {
+            border: 0;
+            width: 100%;
+        }
+
+        .profile img .bottombar {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            margin-left: 5px;
+        }
+
+        .dirnav.navelement ul li:hover {
+            border-left: 0px;
+            padding-left: 0px;
+        }
+
+        .small-logo {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 30px;
+            padding-top: 10px;
+        }
+
+        .small-logo img {
+            width: 60%;
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width:404px) {
+    #app-header .controlstop {
         display: none;
     }
 
-    #homeselection,
-    .navelement ul li {
-        padding: 0;
-        margin: 0;
-        border-left: 0;
-        padding-bottom: 10px;
-
-    }
-
-    .dirnav.navelement {
-        display: flex;
-        justify-content: center;
-    }
-
-    .profile,
-    .profileinfo {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        border: 0;
-    }
-
-    .profile a img {
-        width: 83%;
-    }
-
-    #iconprofile {
-        width: 23px;
-        height: 23px;
-        margin-left: 7px;
-        margin-bottom: 3px;
-    }
-
-    .profile a {
-        border: 0;
-        width: 100%;
-    }
-
-    .profile img .bottombar {
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        margin-left: 5px;
-    }
-
-    .dirnav.navelement ul li:hover {
-        border-left: 0px;
-        padding-left: 0px;
-    }
-
-    .small-logo {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        padding-bottom: 30px;
-        padding-top: 10px;
-    }
-
-    .small-logo img {
-        width: 60%;
-        display: block;
-    }
-
-}}
-
-@media screen and (max-width:404px) {
-#app-header .controlstop {
-    display:none;
 }
-
-
 }
-
-
