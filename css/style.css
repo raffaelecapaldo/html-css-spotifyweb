@@ -356,6 +356,8 @@ main {
     color: var(--white);
     font-size: 0.7rem;
     font-weight: bold;
+    margin-right:10px;
+    transition:0.3s;
 }
 
 
@@ -420,6 +422,10 @@ main {
 
 #mostpopular .albumselection .albumimage::after {
     border-radius:50%;
+}
+
+.btn-upgrade:hover {
+    transform:scale(1.2)
 }
 
 
