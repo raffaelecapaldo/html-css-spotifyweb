@@ -546,6 +546,18 @@ li:hover a,
     }
 }
 
+@media screen and (max-width:1136px) {
+    #barsicon {
+        display: none;
+    }
+
+    .iconsright {
+        margin-left: 50px;
+    }
+
+}
+
+
 @media screen and (max-width:950px) {
     .album {
         width: calc(100% / 4);
@@ -558,7 +570,16 @@ li:hover a,
 
     .leftbar,
     .rightbar {
-        width: 160px;
+        width: 222px;
+    }
+
+    .rightbar .iconsright {
+        display: block;
+    }
+
+    #volumeicon {
+        display: block;
+        margin-left: 33px;
     }
 }
 
