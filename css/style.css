@@ -80,6 +80,7 @@ main {
 
 .app-nav {
     width: 200px;
+    min-height: 480px;
     height: calc(100vh - 90px);
     background-color: var(--black);
     flex-flow: column nowrap;
@@ -113,7 +114,9 @@ main {
 
 #playlist li {
     padding-bottom: 10px;
+
 }
+
 
 .navelement h5 {
     padding-left: 20px;
@@ -382,10 +385,10 @@ main {
     z-index: 3;
 }
 
-/* SIZE MD */
-@media screen and (max-width:768px) {
+
+@media screen and (max-width:1200px) {
     .album {
-        width: calc(100% / 4);
+        width: calc(100% / 5);
     }
 
     .subtitle {
@@ -393,7 +396,19 @@ main {
     }
 }
 
-/* SIZE S */
+@media screen and (max-width:950px) {
+    .album {
+        width: calc(100% / 4);
+    }}
+
+
+@media screen and (max-width:756px) {
+    .album {
+        width: calc(100% / 3);
+    }
+}
+
+
 @media screen and (max-width:576px) {
     .album {
         width: calc(100% / 2);
