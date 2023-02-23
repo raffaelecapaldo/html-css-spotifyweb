@@ -396,6 +396,14 @@ li:hover  a, .xstext.bold:hover{
     color:var(--white);
 }
 
+.xstext.bold img {
+    opacity: 0.6;
+}
+
+.xstext.bold:hover img {
+    opacity:1;
+}
+
 
 .dirnav li:hover img {
     opacity:1;
