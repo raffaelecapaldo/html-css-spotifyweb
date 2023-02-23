@@ -389,16 +389,13 @@ main {
     transition: 0.3s;
 }
 
-.leftbar {
-    width: 230px;
+.leftbar,
+.rightbar {
+    width: 325px;
 }
 
 .iconsright {
     width: 232px;
-}
-
-.rightbar {
-    width: 330px;
 }
 
 .underbar {
@@ -535,6 +532,10 @@ li:hover a,
     transform: scale(1.2)
 }
 
+#app-header .controlstop {
+    background-color: var;
+}
+
 @media screen and (max-width:1200px) {
     .album {
         width: calc(100% / 5);
@@ -555,10 +556,7 @@ li:hover a,
         display: none;
     }
 
-    .leftbar {
-        width: 174px;
-    }
-
+    .leftbar,
     .rightbar {
         width: 160px;
     }
