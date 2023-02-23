@@ -24,6 +24,9 @@
                     <div class="logo">
                         <img src="img/logo.svg" alt="Spotify Logo">
                     </div>
+                    <div class="small-logo">
+                        <img src="img/logo-small.svg" alt="Spotify Logo">
+                    </div>
                     <div class="dirnav navelement">
                         <ul>
                             <li id="homeselection"><a href="#"><img src="img/home.svg" alt="home button"><span>Home</span></a></li>
@@ -31,7 +34,7 @@
                             <li><a href="#"><img src="img/libreria.svg" alt="library"><span>La tua libreria</span></a></li>
                         </ul>
                     </div>
-                    <div class="dirnav mt15 navelement">
+                    <div class="dirnav mt15 navelement" id="playlistsection">
                         <h5 class="u-text">Playlist</h5>
                         <ul id="playlist">
                             <li><a href="#"><i class="fa-sharp fa-regular fa-square-plus"></i>Crea Playlist</a></li>
@@ -49,7 +52,9 @@
                 </div>
                 <div class="bottombar">
                     <div class="profile">
-                        <a class="grey xstext bold" href="#"><img src="img/download.svg">Installa app</a>
+                        <div class="downloadapp"></div>
+                        <a class="grey xstext bold" href="#"><img src="img/download.svg"><span>Installa app</span></a>
+                    </div>
                         <div class="profileinfo">
                             <img id="iconprofile" src="img/profile.svg">
                             <span>John Doe</span>
