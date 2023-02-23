@@ -6,4 +6,8 @@ Horizontal:
  ![horizontal](screenshots/orizzontale.jpg)
  
  Vertical:
- ![vertical](screenshots/verticale.jpg)
+ 
+ <p align="center">
+<img src="screenshots/verticale.jpg" width="30%" align="center"">
+</p>
+
