@@ -213,7 +213,7 @@ main {
 }
 
 .profileinfo img {
-    vertical-align: ;
+    vertical-align: middle;
 }
 
 .profileinfo span {
@@ -259,6 +259,7 @@ main {
 
 .centerbar {
     flex-flow: column nowrap;
+    width: 40%;
 }
 
 .rightbar {
@@ -266,15 +267,18 @@ main {
 }
 
 .rightbar .underbar {
-    width: 150px;
+    width: 100%;
     height: 5px;
 }
 
 .rightbar .overbar {
-    width: 30px;
+    width: 20%;
     height: 5px;
 }
 
+.rightbar .circlebar {
+    left:19%;
+}
 
 /* UTILITIES  */
 .controls .fa-circle-play {
@@ -372,17 +376,29 @@ main {
     transition:0.3s;
 }
 
+.leftbar {
+    width: 230px;
+}
 
+.iconsright {
+    width: 232px;
+}
+
+.rightbar {
+    width: 330px;
+}
 
 .underbar {
-    width: 450px;
+    width: 100%;
     height: 5px;
     border-radius: 15px;
     background-color: var(--grey);
     margin: 0 15px;
     position: relative;
 }
-
+.lenghtbar {
+    width: 100%;
+}
 .lenghtbar h5 {
     font-size: 0.8rem;
     font-weight: 600;
@@ -391,13 +407,25 @@ main {
 
 .overbar {
     position: absolute;
-    width: 115px;
+    width: 70%;
     height: 5px;
     border-radius: 15px;
     background-color: var(--white);
     top: 0;
     left: 0;
     z-index: 3;
+}
+
+.circlebar {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--white);
+    bottom:-5px;
+    left: 69%;
+    z-index: 3;
+
 }
 
 /* HOVER */
@@ -536,7 +564,7 @@ li:hover  a, .xstext.bold:hover{
     #iconprofile {
         width: 23px;
         height: 23px;
-        margin-left:5px;
+        margin-left:7px;
     }
 
     .profile a {
