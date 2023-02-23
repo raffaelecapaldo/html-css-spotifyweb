@@ -7,10 +7,12 @@
 
 a {
     text-decoration: none;
+    color:var(--grey);
 }
 
 ul li {
     list-style: none;
+    cursor:pointer;
 }
 
 /* SCROLLING */
@@ -105,6 +107,7 @@ main {
     width: 30px;
     vertical-align: middle;
     padding-right: 5px;
+    opacity:0.7;
 }
 
 #homeselection {
@@ -389,10 +392,18 @@ main {
 }
 
 /* HOVER */
+li:hover  a, .xstext.bold:hover{
+    color:var(--white);
+}
 
+
+.dirnav li:hover img {
+    opacity:1;
+}
 .albumimage {
     position: relative;
 }
+
 
 .albumselection .albumimage::after {
     font-family: 'Font Awesome 6 Free';
@@ -427,6 +438,8 @@ main {
 .btn-upgrade:hover {
     transform:scale(1.2)
 }
+
+.navelement
 
 
 @media screen and (max-width:1200px) {
