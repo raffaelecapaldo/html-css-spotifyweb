@@ -722,8 +722,13 @@ li:hover a,
 }
 
 @media screen and (max-width:404px) {
-    #app-header .controlstop {
-        display: none;
+    .btn-upgrade {
+        padding:10px 3px;
+        margin-right:-4px;
+    }
+
+    .btn-upgrade:hover {
+        transform:scale(1.1);
     }
 
     .album {
