@@ -121,6 +121,12 @@ main {
     border-left: 3px solid var(--highlight);
     padding-left: 17px;
 }
+#homeselection,
+.dirnav.navelement ul li {
+    border-left: 3px solid transparent;
+}
+
+
 
 #playlist li {
     padding-bottom: 10px;
