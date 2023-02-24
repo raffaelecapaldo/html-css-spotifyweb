@@ -721,4 +721,9 @@ li:hover a,
     }
 
 }
+
+@media screen and (max-height:90px) {
+    #app-header {
+        display:none;
+    }
 }
