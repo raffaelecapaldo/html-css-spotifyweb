@@ -755,3 +755,48 @@ li:hover a,
 *::-webkit-scrollbar-thumb:hover {
     background-color: #898989;
 }
+
+/* EXTRA */
+@keyframes rotatingcd {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes loadingbar {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes positioncircle {
+    from {
+        left: 0%
+    }
+
+    to {
+        left: 100%
+    }
+}
+
+.controlalbumimg img {
+    border-radius: 50%;
+    animation: rotatingcd 2s linear infinite;
+}
+
+.lenghtbar .underbar .overbar {
+    animation: loadingbar 195s;
+}
+
+.lenghtbar .underbar .circlebar {
+    animation: positioncircle 195s;
+}
+
