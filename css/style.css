@@ -708,6 +708,7 @@ li:hover a,
             justify-content: center;
             padding-bottom: 30px;
             padding-top: 10px;
+            margin-right:5px;
         }
 
         .small-logo img {
@@ -721,7 +722,9 @@ li:hover a,
     #app-header .controlstop {
         display: none;
     }
-
+    .album {
+        width: calc(100% / 1);
+    }
 }
 
 @media screen and (max-height:90px) {
