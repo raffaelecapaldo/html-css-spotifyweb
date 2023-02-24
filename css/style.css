@@ -721,7 +721,7 @@ li:hover a,
     }
 }
 
-@media screen and (max-width:404px) {
+@media screen and (max-width:420px) {
     .btn-upgrade {
         padding:10px 3px;
         margin-right:-4px;
@@ -733,6 +733,12 @@ li:hover a,
 
     .album {
         width: calc(100% / 1);
+    }
+}
+
+@media screen and (max-width:388px) {
+    .btn-upgrade {
+        display:none;
     }
 }
 
