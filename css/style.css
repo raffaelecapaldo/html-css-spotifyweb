@@ -3,6 +3,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scrollbar-width: auto;
+    scrollbar-color: #8d8d9b #ffffff;
 }
 
 .small-logo {
@@ -727,3 +729,23 @@ li:hover a,
         display:none;
     }
 }
+/* SCROLLBAR STYLE WEBKIT */
+
+  *::-webkit-scrollbar {
+    width: 11px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background:transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #5a5a5a;
+    border-radius: 1px;
+  }
+    *::-webkit-scrollbar-thumb:hover
+    {
+        background-color: #898989;
+    }
+  
+    
