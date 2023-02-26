@@ -1127,7 +1127,7 @@ input {
 
     .headerartist {
         height: 324px;
-        width: 383px;
+        width: 100%;
         ;
 
     }
@@ -1139,4 +1139,5 @@ input {
     .buttons {
         margin-top: 50px;
     }
+
 }
