@@ -18,7 +18,7 @@ a {
 }
 
 a h3 {
-    color:var(--white);
+    color: var(--white);
 }
 
 ul li {
@@ -823,7 +823,7 @@ input {
     border-radius: 500px;
     color: #000;
     height: 40px;
-    padding:12px 8px 10px 36px;
+    padding: 12px 8px 10px 36px;
     margin-bottom: 20px;
     text-overflow: ellipsis;
     width: 258px;
@@ -896,5 +896,247 @@ input {
 @media screen and (max-width:420px) {
     #searchlist .album {
         width: calc(100% / 1);
+    }
+}
+
+/* ALBUM PAGE */
+
+.headerartist {
+    width: 100%;
+    height: 300px;
+    background-image: url("../img/lana.jpg");
+    background-size: cover;
+    background-position-y: -100px;
+    position: relative;
+    background-repeat: no-repeat;
+
+}
+
+.headerartist::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.topartist {
+    padding: 130px 130px 14px 30px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 10;
+}
+
+
+.topartist h1 {
+    font-size: 5rem;
+    padding-left: 6px;
+}
+
+.topartist p {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.buttons {
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+.playb {
+    font-size: 3rem;
+    color: var(--highlight);
+}
+
+.buttons a {
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 30px;
+    color: var(--white);
+}
+
+.elmenu {
+    margin-left: 30px;
+}
+
+.populars {
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.populars table img {
+    width: 40px;
+    vertical-align: middle;
+    margin: 0 30px;
+}
+
+.populars table {
+    margin-top: 20px;
+    table-layout: auto;
+    width: 80%;
+    cursor: pointer;
+
+}
+
+.populars table tr:hover {
+    background-color: #2a2b2c;
+}
+
+.populars table tr:hover .number:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f04b";
+    font-size: 1.3rem;
+
+}
+
+
+
+.populars table tr {
+    height: 60px;
+
+}
+
+.infonumb {
+    filter: opacity(0.6);
+}
+
+.populars table tr:hover .infonumb {
+    filter: opacity(1);
+}
+
+.populars table tr:hover .likesong {
+    display: inline-block;
+    filter: opacity(1);
+}
+
+.number {
+    margin-left: 20px;
+    position: relative;
+}
+
+.likesong {
+    padding-right: 10px;
+    filter: opacity(0);
+}
+
+.other {
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: grey;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.other:hover {
+    text-decoration: underline;
+}
+
+.lastrelease {
+    margin-top: 30px;
+}
+
+@media screen and (max-width:1152px) {
+    .headerartist {
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    .headerartist h1 {
+        font-size: 4rem;
+
+    }
+}
+
+@media screen and (max-width:860px) {
+    .infonumb {
+        display: none;
+    }
+
+    .headerartist h1 {
+        font-size: 3rem;
+    }
+
+
+    .buttons {
+        margin-top: 30px;
+    }
+
+    .headerartist {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:860px) {
+    .headerartist h1 {
+        font-size: 2rem;
+    }
+
+
+    .headerartist {
+        height: 250px;
+    }
+
+    .buttons {
+        margin-top: 5px;
+    }
+}
+
+
+@media screen and (max-width:674px) {
+    .populars table .number {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width:616px) {
+
+    .populars table img {
+        margin-right: 1px;
+    }
+
+
+    .headerartist h1 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (max-width:440px) {
+    .populars {
+        padding: 0px;
+        margin-top: 20px;
+    }
+
+    .populars h3,
+    .populars table img {
+        margin-left: 20px;
+    }
+
+    .headerartist {
+        height: 324px;
+        width: 383px;
+        ;
+
+    }
+
+    .lastrelease {
+        margin-left: 10px;
+    }
+
+    .buttons {
+        margin-top: 50px;
     }
 }

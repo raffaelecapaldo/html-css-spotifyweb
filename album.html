@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Spotify</title>
+</head>
+
+<body>
+    <!-- AUDIO ON AUTOPLAY -->
+    <!-- NOT ALWAYS WORKING ON CHROMIUM BROWSER https://blog.google/products/chrome/improving-autoplay-chrome/ -->
+    <audio autoplay>
+        <source src="songs/seisyuncomplex.mp3" type="audio/mpeg">
+        Il tuo browser non supporta l'elemento audio.
+    </audio>
+    <!--  /AUDIO ON AUTOPLAY -->
+    <div class="wrapper">
+        <main class="d-flex">
+            <nav class="app-nav d-flex ">
+                <div class="topbar">
+                    <div class="logo">
+                        <img src="img/logo.svg" alt="Spotify Logo">
+                    </div>
+                    <div class="small-logo">
+                        <img src="img/logo-small.svg" alt="Spotify Logo">
+                    </div>
+                    <div class="dirnav navelement">
+                        <ul>
+                            <li id="homeselection"><a href="index.html"><img src="img/home.svg"
+                                        alt="home button"><span>Home</span></a></li>
+                            <li><a href="search.html"><img src="img/search.svg"
+                                        alt="search button"><span>Cerca</span></a></li>
+                            <li><a href="#"><img src="img/libreria.svg" alt="library"><span>La tua libreria</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dirnav mt15 navelement" id="playlistsection">
+                        <h5 class="u-text">Playlist</h5>
+                        <ul id="playlist">
+                            <li><a href="#"><i class="fa-sharp fa-regular fa-square-plus"></i>Crea Playlist</a></li>
+                            <li><a href="#">Nome playlist</a></li>
+                            <li><a href="#">Canzoni Sanremo 2023</a></li>
+                            <li><a href="#">Zecchino D'Oro</a></li>
+                            <li><a href="#">Canzoni anime 2023</a></li>
+                            <li><a href="#">Nome playlist</a></li>
+                            <li><a href="#">Nome playlist</a></li>
+                            <li><a href="#">Nome playlist</a></li>
+                            <a href="#"></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottombar">
+                    <div class="profile">
+                        <div class="downloadapp"></div>
+                        <a class="grey xstext bold" href="#"><img src="img/download.svg"><span>Installa app</span></a>
+                    </div>
+                    <div class="profileinfo">
+                        <img id="iconprofile" src="img/profile.svg">
+                        <span>Raffaele Capaldo</span>
+                    </div>
+                </div>
+            </nav>
+            <div class="app-content">
+                <div class="d-flex align-center" id="app-header">
+                    <div class="controlstop d-flex">
+                        <div class="controlalbumimg">
+                            <img src="img/kessosuband.jpg" alt="sinister cover">
+                        </div>
+                        <div class="controlalbuminfo">
+                            <h5>Kessosu Band</h5>
+                            <p class="subtitle">Seisyun complex</p>
+                            <div class="underbar">
+                                <div class="overbar">
+                                </div>
+                                <div class="circlebar">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mr10">
+                        <a class="btn-upgrade u-text" href="#">Effettua l'upgrade</a>
+                    </div>
+                </div>
+                <section class="headerartist">
+                    <div class="topartist">
+                        <div class="verified d-flex align-center ">
+                            <svg fill="#000000" width="30px" height="30px" viewBox="0 0 24 24" id="verified"
+                                data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line">
+                                <path id="secondary"
+                                    d="M21.37,12c0,1-.86,1.79-1.14,2.67s-.1,2.08-.65,2.83-1.73.94-2.5,1.49-1.28,1.62-2.18,1.92S13,20.65,12,20.65s-2,.55-2.9.27S7.67,19.55,6.92,19,5,18.28,4.42,17.51s-.35-1.92-.65-2.83S2.63,13,2.63,12s.86-1.8,1.14-2.68.1-2.08.65-2.83S6.15,5.56,6.92,5,8.2,3.39,9.1,3.09s1.93.27,2.9.27,2-.55,2.9-.27S16.33,4.46,17.08,5s1.94.72,2.5,1.49.35,1.92.65,2.83S21.37,11,21.37,12Z"
+                                    style="fill: rgb(44, 169, 188); stroke-width: 2;"></path>
+                                <polyline id="primary" points="8 12 11 15 16 10"
+                                    style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+                                </polyline>
+                                <path id="primary-2" data-name="primary"
+                                    d="M21.37,12c0,1-.86,1.79-1.14,2.67s-.1,2.08-.65,2.83-1.73.94-2.5,1.49-1.28,1.62-2.18,1.92S13,20.65,12,20.65s-2,.55-2.9.27S7.67,19.55,6.92,19,5,18.28,4.42,17.51s-.35-1.92-.65-2.83S2.63,13,2.63,12s.86-1.8,1.14-2.68.1-2.08.65-2.83S6.15,5.56,6.92,5,8.2,3.39,9.1,3.09s1.93.27,2.9.27,2-.55,2.9-.27S16.33,4.46,17.08,5s1.94.72,2.5,1.49.35,1.92.65,2.83S21.37,11,21.37,12Z"
+                                    style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+                                </path>
+                            </svg>
+                            <p>Artista verificato</p>
+                        </div>
+                        <h1>Lana del Ray</h1>
+                        <p>39.754.669 ascoltatori mensili</p>
+                    </div>
+                    <div class="buttons d-flex align-center">
+                        <i class="fa-solid fa-circle-play playb"></i>
+                        <a class="u-text" href="#">Segui</a>
+                        <i class="fa-solid fa-ellipsis elmenu"></i>
+                    </div>
+                    <section class="populars">
+                        <h3>Popolari</h3>
+                        <table cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td><span class="number">1</span> <img src="img/youg.jpeg" alt=""> <span
+                                        class="namesong">Summertime Sadness</span></td>
+                                <td class="infonumb">731.346.213</td>
+                                <td class="infonumb"><span><i class="likesong fa-regular fa-heart"></i></span> 4:24</td>
+                            </tr>
+                            <tr>
+                                <td><span class="number">2</span> <img src="img/l1.jpg" alt=""> <span
+                                        class="namesong">Snow on the beach</span></td>
+                                <td class="infonumb">812.334.923</td>
+                                <td class="infonumb"><span><i class="likesong fa-regular fa-heart"></i></span> 4:24</td>
+                            </tr>
+                            <tr>
+                                <td><span class="number">3</span> <img src="img/l2.jpg" alt=""> <span
+                                        class="namesong">Young and beautiful</span></td>
+                                <td class="infonumb">246.322.111</td>
+                                <td class="infonumb"><span><i class="likesong fa-regular fa-heart"></i></span> 4:24</td>
+                            </tr>
+                            <tr>
+                                <td><span class="number">4</span> <img src="img/l3.jpg" alt=""> <span
+                                        class="namesong">West Coast</span></td>
+                                <td class="infonumb">444.293.122</td>
+                                <td class="infonumb"><span><i class="likesong fa-regular fa-heart"></i></span> 4:24</td>
+                            </tr>
+                            <tr>
+                                <td><span class="number">5</span> <img src="img/l4.jpg" alt=""> A&W</td>
+                                <td class="infonumb">616.666.616</td>
+                                <td class="infonumb"><span><i class="likesong fa-regular fa-heart"></i></span> 4:24</td>
+                            </tr>
+                            <tr>
+                                <td><span class="number">6</span> <img src="img/13.jpeg" alt=""> <span
+                                        class="namesong">Another song nananana</span></td>
+                                <td class="infonumb">53.493</td>
+                                <td class="infonumb"><span><i class="likesong fa-regular fa-heart"></i></span> 4:24</td>
+                            </tr>
+                        </table>
+                        <p class="other">Visualizza altro</p>
+                        <section class="lastrelease">
+                            <h2 class="pb15">Ultime uscite</h2>
+                            <div class="row d-flex">
+                                <div class="album">
+                                    <div class="albumselection">
+                                        <div class="albumimage mb7">
+                                            <img src="img/youg.jpeg" alt="kessosu band cover">
+                                        </div>
+                                        <div class="infoalbum">
+                                            <h3 class="mb7">Summertime Sadness</h3>
+                                            <p class="subtitle">Lana del Rey</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="album">
+                                    <div class="albumselection">
+                                        <div class="albumimage mb7">
+                                            <img src="img/l1.jpg" alt="negramaro cover">
+                                        </div>
+                                        <div class="infoalbum">
+                                            <h3 class="mb7">Snow on the beach</h3>
+                                            <p class="subtitle">Lana del Rey</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="album">
+                                    <div class="albumselection">
+                                        <div class="albumimage mb7">
+                                            <img src="img/l2.jpg" alt="gaber cover">
+                                        </div>
+                                        <div class="infoalbum">
+                                            <h3 class="mb7">Young and beautiful</h3>
+                                            <p class="subtitle">Lana del Rey</p>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </div>
+                                <div class="album">
+                                    <div class="albumselection">
+                                        <div class="albumimage mb7">
+                                            <img src="img/l3.jpg" alt="sotto casa cover">
+                                        </div>
+                                        <div class="infoalbum">
+                                            <h3 class="mb7">West Coast</h3>
+                                            <p class="subtitle">Lana del Rey</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="album">
+                                    <div class="albumselection">
+                                        <div class="albumimage mb7">
+                                            <img src="img/l4.jpg" alt="caparezza cover">
+                                        </div>
+                                        <div class="infoalbum">
+                                            <h3 class="mb7">A&W</h3>
+                                            <p class="subtitle">Lana del Rey</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="album">
+                                    <div class="albumselection">
+                                        <div class="albumimage mb7">
+                                            <img src="img/eminem.jpg" alt="Eminem cover">
+                                        </div>
+                                        <div class="infoalbum">
+                                            <h3 class="mb7">Another song nanaanna!</h3>
+                                            <p class="subtitle">Lana del Rey</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+            </div>
+        </main>
+        <div id="controlbar">
+            <div class="wrapbar d-flex align-center">
+                <div class="leftbar d-flex align-center">
+                    <div class="controlalbumimg">
+                        <img src="img/kessosuband.jpg" alt="sinister cover">
+                    </div>
+                    <div class="controlalbuminfo">
+                        <h5>Kessoku Band</h5>
+                        <p class="subtitle">Seisyun complex</p>
+                    </div>
+                    <div class="controlico">
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#"><i class="fa-sharp fa-regular fa-folder"></i></a>
+                    </div>
+                </div>
+                <div class="centerbar d-flex align-center">
+                    <div class="controls">
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                        <i id="playb" class="fa-sharp fa-regular fa-circle-play"></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </div>
+                    <div class="d-flex align-center lenghtbar">
+                        <h5>0:01</h5>
+                        <div class="underbar">
+                            <div class="overbar">
+                            </div>
+                            <div class="circlebar">
+                            </div>
+                        </div>
+                        <h5>3:25</h5>
+                    </div>
+                </div>
+                <div class="rightbar align-center d-flex ">
+                    <div class="iconsright">
+                        <i id="barsicon" class="fa-solid fa-bars"></i>
+                        <i class="fa-sharp fa-solid fa-tv"></i>
+                        <i id="volumeicon" class="fa-solid fa-volume-high"></i>
+                    </div>
+                    <div class="underbar">
+                        <div class="overbar">
+                        </div>
+                        <div class="circlebar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
