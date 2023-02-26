@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <title>Spotify</title>
+</head>
+
+<body>
+    <!-- AUDIO ON AUTOPLAY -->
+    <!-- NOT ALWAYS WORKING ON CHROMIUM BROWSER https://blog.google/products/chrome/improving-autoplay-chrome/ -->
+    <audio autoplay>
+        <source src="../songs/caparezza.mp3" type="audio/mpeg">
+        Il tuo browser non supporta l'elemento audio.
+    </audio>
+    <!--  /AUDIO ON AUTOPLAY -->
+    <div class="wrapper">
+        <main class="d-flex">
+            <nav class="app-nav d-flex ">
+                <div class="topbar">
+                    <div class="logo">
+                        <img src="../img/logo.svg" alt="Spotify Logo">
+                    </div>
+                    <div class="small-logo">
+                        <img src="../img/logo-small.svg" alt="Spotify Logo">
+                    </div>
+                    <div class="dirnav navelement">
+                        <ul>
+                            <li id="homeselection"><a href="../index.html"><img src="../img/home.svg"
+                                        alt="home button"><span>Home</span></a></li>
+                            <li><a href="../search.html"><img src="../img/search.svg" alt="search button"><span>Cerca</span></a></li>
+                            <li><a href="#"><img src="../img/libreria.svg" alt="library"><span>La tua libreria</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dirnav mt15 navelement" id="playlistsection">
+                        <h5 class="u-text">Playlist</h5>
+                        <ul id="playlist">
+                            <li><a href="#"><i class="fa-sharp fa-regular fa-square-plus"></i>Crea Playlist</a></li>
+                            <li><a href="#">Nome playlist</a></li>
+                            <li><a href="#">Canzoni Sanremo 2023</a></li>
+                            <li><a href="#">Zecchino D'Oro</a></li>
+                            <li><a href="#">Canzoni anime 2023</a></li>
+                            <li><a href="#">Nome playlist</a></li>
+                            <li><a href="#">Nome playlist</a></li>
+                            <li><a href="#">Nome playlist</a></li>
+                            <a href="#"></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottombar">
+                    <div class="profile">
+                        <div class="downloadapp"></div>
+                        <a class="grey xstext bold" href="#"><img src="../img/download.svg"><span>Installa app</span></a>
+                    </div>
+                    <div class="profileinfo">
+                        <img id="iconprofile" src="../img/profile.svg">
+                        <span>Raffaele Capaldo</span>
+                    </div>
+                </div>
+            </nav>
+            <div class="app-content">
+                <div class="d-flex align-center" id="app-header">
+                    <div class="controlstop d-flex">
+                        <div class="controlalbumimg">
+                            <img src="../img/caparezza.jpg" alt="caparezza cover">
+                        </div>
+                        <div class="controlalbuminfo">
+                            <h5>Caparezza</h5>
+                            <p class="subtitle">Vieni a ballare in Puglia</p>
+
+                            <div class="underbar">
+                                <div class="overbar">
+                                </div>
+                                <div class="circlebar">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="mr10">
+                        <a class="btn-upgrade u-text" href="#">Effettua l'upgrade</a>
+                    </div>
+                </div>
+                <nav id="category-nav" class="u-text">
+                    <ul class="d-flex justify-center wrap gap10">
+                        <li><a href="#">In e<span class="greenline">vide</span>nza</a></li>
+                        <li><a href="#">Po<span>dca</span>st</a></li>
+                        <li><a href="#">Cla<span>ssifi</span>che</a></li>
+                        <li><a href="#">Ge<span>neri e mo</span>od</a></li>
+                        <li><a href="#">Nu<span>ove us</span>cite</a></li>
+                        <li><a href="#">Sc<span>op</span>ri</a></li>
+                    </ul>
+                </nav>
+                <section class="songlist">
+                    <h2 class="pb15">Recently played</h2>
+                    <div class="row d-flex">
+                        <div class="album">
+                            <a href="../index.html">
+                            <div class="albumselection">
+                                <div class="albumimage mb7">
+                                    <img src="../img/kessosuband.jpg" alt="kessosu band cover">
+                                </div>
+                                <div class="infoalbum">
+                                    <h3 class="mb7">Seisyun complex</h3>
+                                    <p class="subtitle">Kessoku Band</p>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="album">
+                            <a href="negramaro.html">
+                            <div class="albumselection">
+                                <div class="albumimage mb7">
+                                    <img src="../img/negramaro.jpg" alt="negramaro cover">
+                                </div>
+                                <div class="infoalbum">
+                                    <h3 class="mb7">Mentre tutto scorre</h3>
+                                    <p class="subtitle">Negramaro</p>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="album">
+                            <a href="gaber.html">
+                            <div class="albumselection">
+                                <div class="albumimage mb7">
+                                    <img src="../img/gaber.jpg" alt="gaber cover">
+                                </div>
+                                <div class="infoalbum">
+                                    <h3 class="mb7">I soli</h3>
+                                    <p class="subtitle">Giorgio Gaber</p>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="album">
+                            <a href="gazze.html">
+                            <div class="albumselection">
+                                <div class="albumimage mb7">
+                                    <img src="../img/gazze.jpg" alt="sotto casa cover">
+                                </div>
+                                <div class="infoalbum">
+                                    <h3 class="mb7">Sotto casa</h3>
+                                    <p class="subtitle">Max Gazzè</p>
+                                </div>
+                            
+                            </div>
+                            </a>
+                        </div>
+                        <div class="album">
+                            <a href="caparezza.html">
+                            <div class="albumselection">
+                                <div class="albumimage mb7">
+                                    <img src="../img/caparezza.jpg" alt="caparezza cover">
+                                </div>
+                                <div class="infoalbum">
+                                    <h3 class="mb7">Vieni a ballare in Puglia</h3>
+                                    <p class="subtitle">Caparezza</p>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="album">
+                            <a href="eminem.html">
+                            <div class="albumselection">
+                                <div class="albumimage mb7">
+                                    <img src="../img/eminem.jpg" alt="Eminem cover">
+                                </div>
+                                <div class="infoalbum">
+                                    <h3 class="mb7">Stan (con Dido)</h3>
+                                    <p class="subtitle">Eminem</p>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="songlist">
+                    <h2 class="pb15">Creato per John Doe</h2>
+                    <p class="subtitle pb15">Più ascolti, più accurati saranno i suggerimenti.</p>
+                    <div class="row d-flex">
+                        <div class="album">
+                            <div class="albumselection">
+                                <div class="albumimage mb7">
+                                    <img src="../img/radar.jpeg" alt="radar logo">
+                                </div>
+                                <div class="infoalbum">
+                                    <h3 class="mb7">Release Radar</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="album">
+                            <div class="albumselection">
+                                <div class="albumimage mb7">
+                                    <img src="../img/mixdaily.jpeg" alt="daily mix logo">
+                                </div>
+                                <div class="infoalbum">
+                                    <h3 class="mb7">Daily Mix 1</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="songlist" id="mostpopular">
+                    <h2 class="pb15">Artisti più popolari</h2>
+                    <p class="subtitle pb15">Più ascolti, più accurati saranno i suggerimenti.</p>
+                    <div class="row d-flex">
+                        <div class="album">
+                            <div class="albumselection">
+                                <div class="albumimage mb7">
+                                    <img src="../img/youg.jpeg" alt="lana del ray cover">
+                                </div>
+                                <div class="infoalbum">
+                                    <h3 class="mb7">Lana del Ray</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="album">
+                            <div class="albumselection">
+                                <div class="albumimage mb7">
+                                    <img src="../img/einaudi.jpeg" alt="ludovico einaudi">
+                                </div>
+                                <div class="infoalbum">
+                                    <h3 class="mb7">Ludovico Einaudi</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <div id="controlbar">
+            <div class="wrapbar d-flex align-center">
+                <div class="leftbar d-flex align-center">
+                    <div class="controlalbumimg">
+                        <img src="../img/caparezza.jpg" alt="caparezza cover">
+                    </div>
+                    <div class="controlalbuminfo">
+                        <h5>Caparezza</h5>
+                        <p class="subtitle">Vieni a ballare in Puglia</p>
+                    </div>
+                    <div class="controlico">
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#"><i class="fa-sharp fa-regular fa-folder"></i></a>
+                    </div>
+                </div>
+                <div class="centerbar d-flex align-center">
+                    <div class="controls">
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                        <i id="playb" class="fa-sharp fa-regular fa-circle-play"></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </div>
+                    <div class="d-flex align-center lenghtbar">
+                        <h5>0:01</h5>
+                        <div class="underbar">
+                            <div class="overbar">
+                            </div>
+                            <div class="circlebar">
+                            </div>
+                        </div>
+                        <h5>3:25</h5>
+                    </div>
+                </div>
+                <div class="rightbar align-center d-flex ">
+                    <div class="iconsright">
+                        <i id="barsicon" class="fa-solid fa-bars"></i>
+                        <i class="fa-sharp fa-solid fa-tv"></i>
+                        <i id="volumeicon" class="fa-solid fa-volume-high"></i>
+                    </div>
+                    <div class="underbar">
+                        <div class="overbar">
+                        </div>
+                        <div class="circlebar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

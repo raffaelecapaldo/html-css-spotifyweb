@@ -17,6 +17,10 @@ a {
     transition: 0.3s;
 }
 
+a h3 {
+    color:var(--white);
+}
+
 ul li {
     list-style: none;
     cursor: pointer;
