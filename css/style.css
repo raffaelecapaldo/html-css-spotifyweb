@@ -613,6 +613,7 @@ li:hover a,
 
     #app-header .controlstop {
         display: flex;
+        max-width: 170px;
     }
 
     #app-header .controlstop:hover .overbar {
